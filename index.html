@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- Landing creada en el Laboratorio de Landing Pages · Profesor Harvey Sanabria -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Distrirepuestos Almaro · Todo para tu carro, bajo un mismo techo</title>
+<meta name="description" content="Autopartes y baterías en Funza: frenos, suspensión, motor, carburación y parte eléctrica. Domicilio el mismo día en Funza, envíos a todo el país y pago contraentrega. Casi 20 años de experiencia.">
+<meta name="theme-color" content="#111315">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Distrirepuestos Almaro · Todo para tu carro, bajo un mismo techo">
+<meta property="og:description" content="Autopartes y baterías en Funza. Pide por WhatsApp: domicilio el mismo día y envíos a todo el país.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='8' width='28' height='20' rx='4' fill='%23E3242B'/%3E%3Crect x='7' y='4' width='5' height='5' rx='1' fill='%23E3242B'/%3E%3Crect x='20' y='4' width='5' height='5' rx='1' fill='%23E3242B'/%3E%3Cpath d='M18 11l-7 9h5l-2 6 7-9h-5z' fill='%23ffffff'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+
+<script>
+  // Marca que hay JavaScript; el CSS solo anima la entrada del carro cuando esto existe.
+  document.documentElement.classList.add('js');
+  // Red de seguridad: si algo falla, el inicio se muestra igual a los 3 s.
+  setTimeout(function () { document.documentElement.classList.add('listo'); }, 3000);
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoPartsStore",
+  "name": "Distrirepuestos Almaro",
+  "slogan": "Todo para tu carro, bajo un mismo techo",
+  "description": "Almacén de autopartes y baterías para automóviles: frenos, suspensión, motor, carburación y parte eléctrica.",
+  "telephone": "+57 300 123 4567",
+  "address": { "@type": "PostalAddress", "addressLocality": "Funza", "addressRegion": "Cundinamarca", "addressCountry": "CO" },
+  "openingHours": "Mo-Sa 08:00-18:00",
+  "currenciesAccepted": "COP",
+  "paymentAccepted": "Efectivo, Nequi, Daviplata, transferencia bancaria, tarjeta débito y crédito"
+}
+</script>
+</head>
+
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- Iconos (estilo Lucide) y dibujos de los productos -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-carrito" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+    <symbol id="i-buscar" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-rayo" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-camion" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-llave" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-medidor" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+    <symbol id="i-reciclar" viewBox="0 0 24 24"><path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"/><path d="m14 16-3 3 3 3M8.293 13.596 7.196 9.5 3.1 10.598M9.344 5.811l1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843"/><path d="m13.378 9.633 4.096 1.098 1.097-4.096"/></symbol>
+    <symbol id="i-carro" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-billete" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-tarjeta" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></symbol>
+    <symbol id="i-celular" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-telefono" viewBox="0 0 24 24"><path d="M13.83 16.57a1 1 0 0 0 1.21-.3l.36-.47A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.47.35a1 1 0 0 0-.29 1.23 14 14 0 0 0 6.39 6.39"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-mas" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-menos" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-basura" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-izq" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-preguntas" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.910c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.080 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.230-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28Z"/></symbol>
+
+    <!-- Logo: batería con rayo -->
+    <symbol id="logo-bateria" viewBox="0 0 40 32"><rect x="2" y="7" width="36" height="23" rx="5" fill="var(--logo-fondo, #E3242B)"/><rect x="8" y="2" width="7" height="6" rx="1.5" fill="var(--logo-fondo, #E3242B)"/><rect x="25" y="2" width="7" height="6" rx="1.5" fill="var(--logo-fondo, #E3242B)"/><path d="M22.5 10.5 13.5 21h6l-2.5 6.5 9-10.5h-6z" fill="var(--logo-rayo, #FFFFFF)"/></symbol>
+
+    <!-- Dibujos de producto (cuando no hay foto). currentColor = color de la categoría. -->
+    <symbol id="p-bateria" viewBox="0 0 120 120"><rect x="24" y="22" width="16" height="12" rx="2" fill="#B9BDC4"/><rect x="80" y="22" width="16" height="12" rx="2" fill="#E63027"/><rect x="12" y="30" width="96" height="14" rx="4" fill="#33383F"/><rect x="16" y="42" width="88" height="58" rx="6" fill="#23272D"/><rect x="16" y="56" width="88" height="26" fill="currentColor"/><path d="M64 59 52 72h8l-4 8 12-13h-8z" fill="#111315"/><path d="M27 37h8M85 37h8M89 33v8" stroke="#E7E9EC" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="p-aceite" viewBox="0 0 120 120"><path d="M38 30h28l8 10h10a6 6 0 0 1 6 6v54a6 6 0 0 1-6 6H38a6 6 0 0 1-6-6V36a6 6 0 0 1 6-6z" fill="#23272D"/><rect x="44" y="18" width="16" height="12" rx="3" fill="currentColor"/><rect x="38" y="54" width="46" height="34" rx="3" fill="currentColor"/><path d="M61 61c-4 6-6 9-6 12a6 6 0 0 0 12 0c0-3-2-6-6-12z" fill="#111315"/></symbol>
+    <symbol id="p-filtro" viewBox="0 0 120 120"><rect x="30" y="20" width="60" height="12" rx="4" fill="#33383F"/><rect x="28" y="30" width="64" height="70" rx="8" fill="currentColor"/><path d="M38 34v62M48 34v62M58 34v62M68 34v62M78 34v62" stroke="#111315" stroke-opacity=".25" stroke-width="3"/><rect x="34" y="52" width="52" height="22" rx="3" fill="#23272D"/><circle cx="60" cy="26" r="4" fill="#B9BDC4"/></symbol>
+    <symbol id="p-freno" viewBox="0 0 120 120"><circle cx="58" cy="62" r="40" fill="#B9BDC4"/><circle cx="58" cy="62" r="30" fill="#8D9299"/><circle cx="58" cy="62" r="12" fill="#5A5F66"/><g fill="#5A5F66"><circle cx="58" cy="44" r="3"/><circle cx="58" cy="80" r="3"/><circle cx="40" cy="62" r="3"/><circle cx="76" cy="62" r="3"/></g><path d="M80 24c14 6 22 20 22 34l-14 2c0-10-5-19-14-24z" fill="currentColor"/></symbol>
+    <symbol id="p-bujia" viewBox="0 0 120 120"><rect x="54" y="10" width="12" height="14" rx="3" fill="#B9BDC4"/><path d="M50 24h20l4 34H46z" fill="#F2F2EE"/><path d="M52 32h16M51 40h18M50 48h20" stroke="#C9CCD1" stroke-width="2"/><rect x="42" y="58" width="36" height="16" rx="2" fill="currentColor"/><rect x="48" y="74" width="24" height="22" fill="#8D9299"/><path d="M48 78h24M48 84h24M48 90h24" stroke="#5A5F66" stroke-width="2"/><path d="M60 96v10M60 106h8" stroke="#5A5F66" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="p-bombillo" viewBox="0 0 120 120"><circle cx="60" cy="44" r="30" fill="currentColor" opacity=".25"/><path d="M48 66V40a12 12 0 0 1 24 0v26z" fill="#F2F2EE" opacity=".9"/><path d="M55 42h10v14H55z" fill="#FFC72C"/><rect x="42" y="66" width="36" height="10" rx="2" fill="#B9BDC4"/><rect x="48" y="76" width="24" height="16" fill="#8D9299"/><path d="M52 92v14M60 92v14M68 92v14" stroke="#5A5F66" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="p-plumilla" viewBox="0 0 120 120"><path d="M14 98 102 22" stroke="#23272D" stroke-width="10" stroke-linecap="round"/><path d="M14 98 102 22" stroke="currentColor" stroke-width="3" stroke-linecap="round" transform="translate(4 4)"/><rect x="50" y="52" width="18" height="12" rx="3" fill="#5A5F66" transform="rotate(-40 59 58)"/></symbol>
+    <symbol id="p-amortiguador" viewBox="0 0 120 120"><rect x="56" y="8" width="8" height="26" rx="2" fill="#B9BDC4"/><rect x="44" y="30" width="32" height="10" rx="3" fill="currentColor"/><rect x="48" y="40" width="24" height="56" rx="5" fill="#23272D"/><rect x="48" y="60" width="24" height="14" fill="currentColor"/><circle cx="60" cy="104" r="9" fill="none" stroke="#5A5F66" stroke-width="5"/></symbol>
+    <symbol id="p-cables" viewBox="0 0 120 120"><path d="M30 40c0 40 20 60 50 50s10-40 20-60" fill="none" stroke="#E63027" stroke-width="5"/><path d="M40 34c0 34 14 50 40 46s16-30 24-48" fill="none" stroke="#23272D" stroke-width="5"/><path d="M18 22l14 12-6 8-14-10z" fill="currentColor"/><path d="M44 16l2 18-10 2-4-16z" fill="#33383F"/><path d="M94 22l14 2-2 10-14-2z" fill="currentColor"/><path d="M96 34l14 6-4 9-14-6z" fill="#33383F"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="nav" id="nav">
+  <div class="contenedor nav__fila">
+    <a class="marca" href="#inicio" aria-label="Distri Repuestos Almaro, inicio">
+      <svg class="marca__icono" aria-hidden="true"><use href="#logo-bateria"/></svg>
+      <span class="marca__texto"><small>Distrirepuestos</small>Almaro</span>
+    </a>
+    <nav class="nav__enlaces" id="menu" aria-label="Secciones">
+      <a href="#oferta">Oferta</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#vehiculo">Tu vehículo</a>
+      <a href="#servicios">Entregas</a>
+      <a href="#como-comprar">Cómo comprar</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="nav__solo-menu" href="#contactanos">Contáctanos</a>
+    </nav>
+    <div class="nav__acciones">
+      <a class="boton boton--acento boton--chico nav__comprar" href="#tienda">Comprar ahora →</a>
+      <button class="nav__carrito" type="button" id="abrir-carrito" aria-label="Abrir carrito (0 productos)">
+        <svg class="icono" aria-hidden="true"><use href="#i-carrito"/></svg>
+        <span class="nav__contador" id="contador" aria-hidden="true">0</span>
+      </button>
+      <button class="nav__menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <svg class="icono" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ============ INICIO ============
+     El carro es el menú: entra rodando, frena, prende las luces y cada punto lleva a su
+     categoría en la tienda. -->
+<section class="hero" id="inicio" aria-labelledby="hero-titulo">
+  <div class="hero__rejilla" aria-hidden="true"></div>
+  <div class="contenedor hero__texto">
+    <p class="ceja ceja--hero"><span class="voltaje" aria-hidden="true">20 años</span> Autopartes y baterías en Funza</p>
+    <h1 class="hero__titulo" id="hero-titulo">
+      <span class="hero__linea">Todo para</span>
+      <span class="hero__linea hero__linea--acento">tu carro,</span>
+      <span class="hero__linea hero__linea--chica">bajo un mismo techo.</span>
+    </h1>
+    <p class="hero__bajada">Baterías, frenos, suspensión, motor, carburación y parte eléctrica. Arma tu pedido aquí y confírmalo por WhatsApp: <strong>domicilio el mismo día en Funza</strong> y envíos a todo el país.</p>
+    <form class="buscador" id="buscador-hero" role="search">
+      <label class="oculto" for="q-hero">Buscar repuesto</label>
+      <svg class="icono" aria-hidden="true"><use href="#i-buscar"/></svg>
+      <input id="q-hero" type="search" placeholder="Busca: batería NS40, pastillas Sandero, bujías…" autocomplete="off">
+      <button class="boton boton--acento" type="submit">Buscar</button>
+    </form>
+    <div class="hero__cta">
+      <a class="boton boton--acento boton--grande" href="#tienda">Comprar ahora <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      <a class="enlace-claro" href="#vehiculo">o busca la batería de tu carro</a>
+    </div>
+    <small class="micro">Pago contraentrega en Funza · Envíos a todo el país · Garantía en los productos</small>
+  </div>
+
+  <div class="escenario" id="escenario">
+    <div class="escenario__vel" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="carro" id="carro">
+      <svg class="carro__svg" viewBox="0 0 800 280" role="img" aria-label="Carro con sus partes señaladas">
+        <defs>
+          <linearGradient id="g-carroceria" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FF5A5F"/><stop offset=".45" stop-color="#E3242B"/><stop offset="1" stop-color="#9E1218"/>
+          </linearGradient>
+          <linearGradient id="g-vidrio" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3A4250"/><stop offset=".5" stop-color="#151A21"/><stop offset="1" stop-color="#252C36"/>
+          </linearGradient>
+          <linearGradient id="g-haz" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#FFF6C8" stop-opacity=".8"/><stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/>
+          </linearGradient>
+          <radialGradient id="g-sombra"><stop offset="0" stop-color="#000" stop-opacity=".7"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="400" cy="262" rx="360" ry="14" fill="url(#g-sombra)"/>
+        <path class="carro__haz" d="M706 160 L800 118 L800 216 Z" fill="url(#g-haz)"/>
+        <g class="carro__cuerpo">
+          <path d="M92 196C90 168 96 150 120 140L150 132C170 92 200 66 250 62L440 60C490 62 520 86 556 120L650 134C690 140 708 156 710 178L712 198C712 208 706 212 696 212L643 212A58 58 0 0 0 527 212L283 212A58 58 0 0 0 167 212L106 212C98 212 92 206 92 196Z" fill="url(#g-carroceria)"/>
+          <path d="M172 132C188 98 210 76 252 72L436 70C478 72 506 94 534 124Z" fill="url(#g-vidrio)"/>
+          <path d="M226 86 286 76 262 122Z" fill="#fff" opacity=".09"/>
+          <rect x="352" y="70" width="11" height="58" fill="#C21D23"/>
+          <path d="M150 64h90" stroke="#23272D" stroke-width="6" stroke-linecap="round"/>
+          <path d="M122 144 652 138" stroke="#FF9599" stroke-width="2" opacity=".7"/>
+          <path d="M363 130V206M292 132C286 160 286 190 294 206M532 126C526 156 526 186 534 206" stroke="#7E0F14" stroke-width="2" fill="none"/>
+          <rect x="306" y="152" width="26" height="5" rx="2.5" fill="#7E0F14"/>
+          <rect x="440" y="150" width="26" height="5" rx="2.5" fill="#7E0F14"/>
+          <path d="M520 120l20-6 8 13-22 3z" fill="#23272D"/>
+          <rect x="283" y="200" width="244" height="9" rx="3" fill="#23272D" opacity=".85"/>
+          <path d="M664 194h48v6c0 6-4 10-10 10h-38z" fill="#23272D"/>
+          <path d="M92 188h40v14H100c-5 0-8-4-8-8z" fill="#23272D"/>
+          <path class="carro__farola" d="M680 148C696 150 706 158 709 170L682 168C676 162 674 154 680 148Z" fill="#FFF6C8"/>
+          <path class="carro__stop" d="M94 158C96 150 104 144 118 142L120 160 96 164Z" fill="#FFB3B6"/>
+        </g>
+        <g class="rueda" transform="translate(225 212)">
+          <circle r="48" fill="#15171A"/><circle r="45" fill="none" stroke="#2A2D31" stroke-width="3"/>
+          <circle r="32" fill="#C9CCD1"/><circle r="25" fill="#8D9196"/>
+          <g class="rueda__rin"><path d="M0-31V31M-29.5-9.6 29.5 9.6M-18.2 25.1 18.2-25.1M-29.5 9.6 29.5-9.6M18.2 25.1-18.2-25.1" stroke="#E7E9EC" stroke-width="6" stroke-linecap="round"/><circle r="8" fill="#5A5F66"/></g>
+          <path d="M-22-14A26 26 0 0 1 4-26L5-18A18 18 0 0 0-15-9Z" fill="#E63027"/>
+        </g>
+        <g class="rueda" transform="translate(585 212)">
+          <circle r="48" fill="#15171A"/><circle r="45" fill="none" stroke="#2A2D31" stroke-width="3"/>
+          <circle r="32" fill="#C9CCD1"/><circle r="25" fill="#8D9196"/>
+          <g class="rueda__rin"><path d="M0-31V31M-29.5-9.6 29.5 9.6M-18.2 25.1 18.2-25.1M-29.5 9.6 29.5-9.6M18.2 25.1-18.2-25.1" stroke="#E7E9EC" stroke-width="6" stroke-linecap="round"/><circle r="8" fill="#5A5F66"/></g>
+          <path d="M-22-14A26 26 0 0 1 4-26L5-18A18 18 0 0 0-15-9Z" fill="#E63027"/>
+        </g>
+      </svg>
+      <!-- Puntos: posición en % del dibujo (800 × 280). -->
+      <button class="punto" type="button" data-cat="baterias" style="--x: 80%; --y: 47%; --d: .0s"><span class="punto__etiqueta">Baterías</span></button>
+      <button class="punto" type="button" data-cat="carburacion" style="--x: 64%; --y: 41%; --d: .12s"><span class="punto__etiqueta">Carburación</span></button>
+      <button class="punto" type="button" data-cat="motor" style="--x: 86.5%; --y: 66%; --d: .24s"><span class="punto__etiqueta">Motor</span></button>
+      <button class="punto" type="button" data-cat="frenos" style="--x: 73.1%; --y: 75.7%; --d: .36s"><span class="punto__etiqueta">Frenos</span></button>
+      <button class="punto" type="button" data-cat="suspension" style="--x: 28.1%; --y: 60%; --d: .48s"><span class="punto__etiqueta">Suspensión</span></button>
+      <button class="punto" type="button" data-cat="electrica" style="--x: 13.5%; --y: 54%; --d: .6s"><span class="punto__etiqueta">Parte eléctrica</span></button>
+    </div>
+    <div class="carretera" aria-hidden="true"></div>
+    <p class="escenario__ayuda"><svg class="icono" aria-hidden="true"><use href="#i-llave"/></svg> Toca una parte del carro y te mostramos sus repuestos</p>
+  </div>
+</section>
+
+<!-- Cinta de beneficios -->
+<div class="cinta" aria-label="Beneficios">
+  <div class="cinta__pista">
+    <ul class="cinta__lista">
+      <li><svg class="icono" aria-hidden="true"><use href="#i-camion"/></svg>Domicilio el mismo día en Funza</li>
+      <li><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>Envíos a todo el país</li>
+      <li><svg class="icono" aria-hidden="true"><use href="#i-billete"/></svg>Pago contraentrega</li>
+      <li><svg class="icono" aria-hidden="true"><use href="#i-escudo"/></svg>Garantía en los productos</li>
+      <li><svg class="icono" aria-hidden="true"><use href="#i-llave"/></svg>20 años de experiencia</li>
+    </ul>
+    <ul class="cinta__lista" aria-hidden="true">
+      <li><svg class="icono"><use href="#i-camion"/></svg>Domicilio el mismo día en Funza</li>
+      <li><svg class="icono"><use href="#i-pin"/></svg>Envíos a todo el país</li>
+      <li><svg class="icono"><use href="#i-billete"/></svg>Pago contraentrega</li>
+      <li><svg class="icono"><use href="#i-escudo"/></svg>Garantía en los productos</li>
+      <li><svg class="icono"><use href="#i-llave"/></svg>20 años de experiencia</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ 01 EL PROBLEMA (plantilla del profesor: "¿Te ha pasado?") ============ -->
+<section class="seccion seccion--clara problema" id="problema" aria-labelledby="problema-titulo">
+  <div class="contenedor problema__caja">
+    <div data-revelar>
+      <p class="ceja"><span class="ceja__num">01</span> ¿Te ha pasado?</p>
+      <h2 class="titulo" id="problema-titulo">Giras la llave y… <em>nada.</em></h2>
+    </div>
+    <div class="problema__texto" data-revelar>
+      <p>El carro no prende, los frenos suenan o la suspensión golpea, y te toca recorrer almacenes preguntando quién tiene el repuesto, a qué precio y si de verdad le sirve a tu carro.</p>
+      <p><strong>En Almaro lo encuentras aquí mismo, lo pides por WhatsApp y te llega el mismo día en Funza, o por transportadora a todo el país.</strong></p>
+    </div>
+    <ul class="problema__sintomas" role="list" data-revelar>
+      <li>Arranca lento en las mañanas</li>
+      <li>Los frenos chillan</li>
+      <li>La suspensión golpea</li>
+      <li>El motor se apaga en mínimo</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 02 BENEFICIOS ============ -->
+<section class="seccion seccion--oscura" id="beneficios" aria-labelledby="beneficios-titulo">
+  <div class="contenedor">
+    <header class="encabezado encabezado--centro" data-revelar>
+      <p class="ceja"><span class="ceja__num">02</span> Beneficios</p>
+      <h2 class="titulo" id="beneficios-titulo">Por qué elegir <em>Almaro</em></h2>
+    </header>
+    <ul class="beneficios" role="list">
+      <li class="beneficio" data-revelar><b>1</b><h3>Atención personalizada</h3><p>Casi 20 años asesorando a los conductores de Funza: te decimos qué repuesto le sirve a tu carro.</p></li>
+      <li class="beneficio" data-revelar><b>2</b><h3>Repuestos y baterías de calidad</h3><p>Marcas reconocidas en baterías, frenos, suspensión, motor y parte eléctrica.</p></li>
+      <li class="beneficio" data-revelar><b>3</b><h3>Buenos precios</h3><p>Precios de almacén, ofertas del mes y pago contraentrega en Funza.</p></li>
+      <li class="beneficio" data-revelar><b>4</b><h3>Garantía en los productos</h3><p>Si algo falla, respondemos. Compras con respaldo.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 03 LA OFERTA (producto estrella) ============ -->
+<section class="seccion seccion--clara" id="oferta" aria-labelledby="oferta-titulo">
+  <div class="contenedor">
+    <article class="oferta" data-revelar>
+      <figure class="oferta__foto">
+        <img id="oferta-img" src="img/producto-1-bateria.webp" alt="" width="720" height="720" loading="lazy">
+        <span class="oferta__sello">La más vendida</span>
+      </figure>
+      <div class="oferta__info">
+        <p class="ceja"><span class="ceja__num">03</span> Producto destacado</p>
+        <h2 class="titulo" id="oferta-titulo"><span id="oferta-nombre"></span> <em>para tu carro</em></h2>
+        <p class="oferta__precio" id="oferta-precio"></p>
+        <ul class="oferta__incluye" role="list">
+          <li><svg class="icono" aria-hidden="true"><use href="#i-check"/></svg>Garantía en el producto</li>
+          <li><svg class="icono" aria-hidden="true"><use href="#i-check"/></svg>Domicilio el mismo día en Funza</li>
+          <li><svg class="icono" aria-hidden="true"><use href="#i-check"/></svg>Asesoría para elegir la referencia</li>
+        </ul>
+        <p class="oferta__condiciones">Para carros pequeños con batería grupo NS40 (Spark, Picanto, March, Kwid, Grand i10…). Antes de despachar confirmamos que le sirve a tu carro.</p>
+        <button class="boton boton--acento boton--grande" type="button" data-comprar><svg class="icono" aria-hidden="true"><use href="#i-carrito"/></svg>Comprar ahora</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 04 CATEGORÍAS ============ -->
+<section class="seccion seccion--oscura" id="categorias" aria-labelledby="cat-titulo">
+  <div class="contenedor">
+    <header class="encabezado" data-revelar>
+      <p class="ceja"><span class="ceja__num">04</span> Categorías</p>
+      <h2 class="titulo" id="cat-titulo">Todo lo que tu carro <em>necesita</em></h2>
+    </header>
+    <ul class="categorias" id="lista-categorias" role="list"></ul>
+  </div>
+</section>
+
+<!-- ============ 02 TIENDA ============ -->
+<section class="seccion seccion--clara" id="tienda" aria-labelledby="tienda-titulo">
+  <div class="contenedor">
+    <header class="encabezado encabezado--fila" data-revelar>
+      <div>
+        <p class="ceja"><span class="ceja__num">05</span> Tienda</p>
+        <h2 class="titulo" id="tienda-titulo">Escoge, agrega y <em>pide</em></h2>
+      </div>
+      <p class="encabezado__nota">Precios de referencia en pesos colombianos. Te confirmamos disponibilidad y la referencia exacta de tu carro por WhatsApp.</p>
+    </header>
+
+    <div class="filtros" role="search">
+      <div class="filtros__buscar">
+        <svg class="icono" aria-hidden="true"><use href="#i-buscar"/></svg>
+        <label class="oculto" for="q">Buscar en la tienda</label>
+        <input id="q" type="search" placeholder="Buscar por nombre, marca o referencia" autocomplete="off">
+      </div>
+      <div class="filtros__orden">
+        <label for="orden">Ordenar</label>
+        <select id="orden">
+          <option value="destacados">Destacados</option>
+          <option value="menor">Menor precio</option>
+          <option value="mayor">Mayor precio</option>
+          <option value="nombre">Nombre (A–Z)</option>
+        </select>
+      </div>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+    <div class="filtro-activo" id="filtro-vehiculo" hidden></div>
+
+    <p class="resultados" id="resultados" aria-live="polite"></p>
+    <ul class="productos" id="productos" role="list"></ul>
+    <div class="vacio" id="vacio" hidden>
+      <svg class="icono" aria-hidden="true"><use href="#i-buscar"/></svg>
+      <p><strong>No encontramos ese repuesto en la tienda.</strong><br>Escríbenos: casi siempre lo conseguimos.</p>
+      <div class="vacio__acciones">
+        <button class="boton boton--oscuro" type="button" id="limpiar">Ver todo</button>
+        <a class="boton boton--whatsapp" data-whatsapp="Hola, busco un repuesto que no vi en la tienda:"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Preguntar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 TU VEHÍCULO ============ -->
+<section class="seccion seccion--acento" id="vehiculo" aria-labelledby="vehiculo-titulo">
+  <div class="contenedor vehiculo">
+    <div class="vehiculo__texto" data-revelar>
+      <p class="ceja"><span class="ceja__num">06</span> Tu vehículo</p>
+      <h2 class="titulo" id="vehiculo-titulo">¿Qué batería le sirve a <em>tu carro</em>?</h2>
+      <p>Escoge la marca y el modelo y te mostramos las baterías del grupo que usa. Antes de despachar confirmamos la referencia contigo: cambia según el año y el motor.</p>
+    </div>
+    <form class="vehiculo__form" id="form-vehiculo" data-revelar>
+      <div class="campo">
+        <label for="marca-carro">Marca</label>
+        <select id="marca-carro" required><option value="">Escoge la marca</option></select>
+      </div>
+      <div class="campo">
+        <label for="modelo-carro">Modelo</label>
+        <select id="modelo-carro" required disabled><option value="">Primero la marca</option></select>
+      </div>
+      <div class="medidor" id="medidor" aria-live="polite">
+        <svg class="medidor__arco" viewBox="0 0 200 110" aria-hidden="true">
+          <path d="M20 100A80 80 0 0 1 180 100" fill="none" stroke="#111315" stroke-opacity=".15" stroke-width="14" stroke-linecap="round"/>
+          <path class="medidor__carga" d="M20 100A80 80 0 0 1 180 100" fill="none" stroke="#111315" stroke-width="14" stroke-linecap="round" pathLength="100"/>
+        </svg>
+        <p class="medidor__grupo"><small>Grupo</small><span id="grupo-texto">—</span></p>
+      </div>
+      <button class="boton boton--oscuro boton--ancho" type="submit">Ver baterías compatibles <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></button>
+      <p class="vehiculo__otro">¿No está tu carro? <a data-whatsapp="Hola, ¿qué batería le sirve a mi carro? Es un…">Pregúntanos por WhatsApp</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 07 ENTREGAS Y CONFIANZA ============ -->
+<section class="seccion seccion--oscura" id="servicios" aria-labelledby="servicios-titulo">
+  <div class="contenedor">
+    <header class="encabezado" data-revelar>
+      <p class="ceja"><span class="ceja__num">07</span> Entregas y confianza</p>
+      <h2 class="titulo" id="servicios-titulo">20 años <em>en Funza</em></h2>
+    </header>
+    <div class="servicios">
+      <figure class="servicios__foto" data-revelar>
+        <img src="img/tienda-1.webp" alt="Pasillo de un almacén de autopartes con estanterías llenas" width="960" height="720" loading="lazy">
+        <figcaption><svg class="icono" aria-hidden="true"><use href="#i-llave"/></svg> Asesoría personalizada en el almacén</figcaption>
+      </figure>
+      <ul class="servicios__lista" role="list">
+        <li class="servicio" data-revelar>
+          <svg class="icono" aria-hidden="true"><use href="#i-camion"/></svg>
+          <h3>Domicilio el mismo día</h3>
+          <p>En Funza y municipios cercanos. Con contraentrega en efectivo desde $50.000.</p>
+        </li>
+        <li class="servicio" data-revelar>
+          <svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg>
+          <h3>Envíos a todo el país</h3>
+          <p>Por transportadora, de 2 a 4 días hábiles.</p>
+        </li>
+        <li class="servicio" data-revelar>
+          <svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>
+          <h3>Recoge en el almacén</h3>
+          <p>Pide por WhatsApp y pasa por tu repuesto de lunes a sábado, 8:00 a. m. a 6:00 p. m.</p>
+        </li>
+        <li class="servicio" data-revelar>
+          <svg class="icono" aria-hidden="true"><use href="#i-escudo"/></svg>
+          <h3>Garantía en los productos</h3>
+          <p>Repuestos y baterías de calidad, con el respaldo de un almacén con casi 20 años.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CÓMO COMPRAR ============ -->
+<section class="seccion seccion--clara" id="como-comprar" aria-labelledby="comprar-titulo">
+  <div class="contenedor">
+    <header class="encabezado" data-revelar>
+      <p class="ceja"><span class="ceja__num">08</span> Cómo comprar</p>
+      <h2 class="titulo" id="comprar-titulo">Tres pasos y <em>listo</em></h2>
+    </header>
+    <ol class="pasos">
+      <li class="paso" data-revelar>
+        <span class="paso__num">1</span>
+        <h3>Arma tu carrito</h3>
+        <p>Agrega los repuestos de la tienda o busca la batería de tu carro.</p>
+      </li>
+      <li class="paso" data-revelar>
+        <span class="paso__num">2</span>
+        <h3>Envía el pedido por WhatsApp</h3>
+        <p>El carrito escribe el mensaje por ti: productos, total, entrega y forma de pago.</p>
+      </li>
+      <li class="paso" data-revelar>
+        <span class="paso__num">3</span>
+        <h3>Recibe o recoge</h3>
+        <p>Domicilio el mismo día en Funza, envío nacional o recoges en el almacén.</p>
+      </li>
+    </ol>
+    <div class="pagos" data-revelar>
+      <p class="pagos__titulo">Formas de pago</p>
+      <ul role="list">
+        <li><svg class="icono" aria-hidden="true"><use href="#i-billete"/></svg>Efectivo</li>
+        <li><svg class="icono" aria-hidden="true"><use href="#i-celular"/></svg>Nequi · Daviplata</li>
+        <li><svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg>Transferencia bancaria</li>
+        <li><svg class="icono" aria-hidden="true"><use href="#i-tarjeta"/></svg>Débito y crédito (datáfono)</li>
+      </ul>
+      <p class="pagos__nota"><strong>Contraentrega</strong> en Funza y barrios cercanos: pedido mínimo $50.000, pagas en efectivo al repartidor y tiene un costo adicional de $3.000.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Marcas: solo los nombres, sin logos -->
+<div class="marcas" aria-label="Marcas que manejamos">
+  <div class="marcas__pista">
+    <p>MAC <i>✦</i> Willard <i>✦</i> Incolbest <i>✦</i> Gabriel <i>✦</i> Tecnifil <i>✦</i> NGK <i>✦</i> Mobil <i>✦</i> Philips <i>✦</i></p>
+    <p aria-hidden="true">MAC <i>✦</i> Willard <i>✦</i> Incolbest <i>✦</i> Gabriel <i>✦</i> Tecnifil <i>✦</i> NGK <i>✦</i> Mobil <i>✦</i> Philips <i>✦</i></p>
+  </div>
+</div>
+
+<!-- ============ 09 TESTIMONIOS ============ -->
+<section class="seccion seccion--clara" id="testimonios-seccion" aria-labelledby="testimonios-titulo">
+  <div class="contenedor">
+    <header class="encabezado encabezado--centro" data-revelar>
+      <p class="ceja"><span class="ceja__num">09</span> Testimonios</p>
+      <h2 class="titulo" id="testimonios-titulo">Lo que dicen <em>nuestros clientes</em></h2>
+      <p class="encabezado__nota encabezado__nota--centro">Testimonios de ejemplo para el prototipo: se reemplazan por los reales del almacén.</p>
+    </header>
+    <ul class="testimonios" id="testimonios" role="list"></ul>
+  </div>
+</section>
+
+<!-- ============ 10 PREGUNTAS ============ -->
+<section class="seccion seccion--oscura" id="preguntas" aria-labelledby="preguntas-titulo">
+  <div class="contenedor preguntas">
+    <header class="encabezado" data-revelar>
+      <p class="ceja"><span class="ceja__num">10</span> Preguntas</p>
+      <h2 class="titulo" id="preguntas-titulo">Preguntas <em>frecuentes</em></h2>
+      <img class="preguntas__foto" src="img/bateria-1.webp" alt="Revisión de la batería en el motor de un carro" width="960" height="720" loading="lazy">
+    </header>
+    <div class="acordeon">
+      <details>
+        <summary>¿Hacen domicilios? ¿Cuánto se demoran?</summary>
+        <p>Sí. En Funza y municipios cercanos te llega el mismo día. A otras ciudades enviamos por transportadora, de 2 a 4 días hábiles.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pagar contraentrega?</summary>
+        <p>Sí, en Funza y barrios cercanos, para pedidos desde $50.000. Pagas en efectivo al repartidor y tiene un costo adicional de $3.000.</p>
+      </details>
+      <details>
+        <summary>¿Qué medios de pago aceptan?</summary>
+        <p>Efectivo, Nequi, Daviplata, transferencia bancaria y tarjeta débito o crédito por datáfono en el almacén. No recibimos PayPal.</p>
+      </details>
+      <details>
+        <summary>¿Cómo sé qué repuesto le sirve a mi carro?</summary>
+        <p>Dinos marca, modelo, año y motor por WhatsApp y te damos la referencia exacta. Para las baterías puedes usar el buscador de "Tu vehículo".</p>
+      </details>
+      <details>
+        <summary>¿Los productos tienen garantía?</summary>
+        <p>Sí. Todos los productos tienen garantía; guarda tu factura y escríbenos si algo falla.</p>
+      </details>
+      <details>
+        <summary>¿Puedo recoger en el almacén? ¿Cuál es el horario?</summary>
+        <p>Sí: en el carrito escoge "Recoger en el almacén". Atendemos de lunes a sábado, de 8:00 a. m. a 6:00 p. m., en Funza.</p>
+      </details>
+      <details>
+        <summary>¿El pedido queda hecho al tocar "Enviar por WhatsApp"?</summary>
+        <p>Queda enviado. Un asesor lo revisa, te confirma disponibilidad, total y hora de entrega, y ahí sí queda listo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ CONTÁCTANOS ============ -->
+<footer class="pie" id="contactanos" aria-labelledby="contacto-titulo">
+  <div class="contenedor">
+    <h2 class="pie__grande" id="contacto-titulo">¿Listo para <em>tu repuesto?</em></h2>
+    <div class="pie__acciones">
+      <a class="boton boton--whatsapp boton--grande" data-whatsapp="Hola Almaro, necesito un repuesto para mi carro."><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Escríbenos por WhatsApp</a>
+      <a class="boton boton--contorno boton--grande" data-telefono><svg class="icono" aria-hidden="true"><use href="#i-telefono"/></svg>300 123 4567</a>
+    </div>
+    <div class="pie__columnas">
+      <div>
+        <a class="marca marca--pie" href="#inicio">
+          <svg class="marca__icono" aria-hidden="true"><use href="#logo-bateria"/></svg>
+          <span class="marca__texto"><small>Distrirepuestos</small>Almaro</span>
+        </a>
+        <p class="pie__lema">Todo para tu carro, bajo un mismo techo.</p>
+      </div>
+      <div>
+        <h3>Almacén</h3>
+        <p><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg><span id="direccion"></span></p>
+        <ul class="pie__horario" id="horario" role="list"></ul>
+      </div>
+      <div>
+        <h3>Redes sociales</h3>
+        <div class="pie__redes" aria-hidden="true">
+          <span><svg class="icono"><use href="#i-instagram"/></svg></span>
+          <span><svg class="icono"><use href="#i-facebook"/></svg></span>
+        </div>
+        <p class="pie__pronto">Muy pronto en Instagram y Facebook. Mientras tanto, estamos en WhatsApp.</p>
+      </div>
+    </div>
+    <p class="pie__legal">© <span id="anio"></span> Distrirepuestos Almaro · Funza, Cundinamarca · Prototipo académico de tienda virtual. Fotos de productos: el almacén y Wikimedia Commons. Las marcas son de sus dueños.</p>
+    <p class="pie__credito">Landing creada en el Laboratorio de Landing Pages · Prof. Harvey Sanabria</p>
+  </div>
+</footer>
+
+<!-- Botón fijo en el celular (plantilla del profesor) -->
+<a class="boton boton--acento cta-movil" href="#tienda">Comprar ahora →</a>
+
+<!-- Botones flotantes -->
+<div class="flotantes">
+  <a class="flotante flotante--telefono" data-telefono aria-label="Llamar"><svg class="icono" aria-hidden="true"><use href="#i-telefono"/></svg></a>
+  <a class="flotante flotante--whatsapp" data-whatsapp="Hola Almaro, quiero información." aria-label="Escribir por WhatsApp"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+</div>
+
+<!-- ============ FICHA DEL PRODUCTO ============ -->
+<dialog class="ficha" id="ficha" aria-labelledby="ficha-nombre">
+  <div class="ficha__caja">
+    <button class="cerrar" type="button" data-cerrar aria-label="Cerrar"><svg class="icono" aria-hidden="true"><use href="#i-cerrar"/></svg></button>
+    <div class="ficha__media" id="ficha-media"></div>
+    <div class="ficha__info">
+      <p class="ficha__marca" id="ficha-marca"></p>
+      <h2 class="ficha__nombre" id="ficha-nombre"></h2>
+      <p class="ficha__precio" id="ficha-precio"></p>
+      <p class="ficha__desc" id="ficha-desc"></p>
+      <dl class="ficha__specs" id="ficha-specs"></dl>
+      <p class="ficha__stock" id="ficha-stock"></p>
+      <div class="ficha__comprar">
+        <div class="cantidad" role="group" aria-label="Cantidad">
+          <button type="button" data-paso="-1" aria-label="Quitar uno"><svg class="icono" aria-hidden="true"><use href="#i-menos"/></svg></button>
+          <output id="ficha-cantidad">1</output>
+          <button type="button" data-paso="1" aria-label="Agregar uno"><svg class="icono" aria-hidden="true"><use href="#i-mas"/></svg></button>
+        </div>
+        <button class="boton boton--acento boton--ancho" type="button" id="ficha-agregar"><svg class="icono" aria-hidden="true"><use href="#i-carrito"/></svg>Agregar al carrito</button>
+      </div>
+      <a class="ficha__preguntar" id="ficha-preguntar"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>¿Le sirve a mi carro? Pregúntanos</a>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ CARRITO ============ -->
+<dialog class="carrito" id="carrito" aria-labelledby="carrito-titulo">
+  <div class="carrito__caja">
+    <header class="carrito__cab">
+      <button class="carrito__volver" type="button" id="volver-carrito" hidden aria-label="Volver al carrito"><svg class="icono" aria-hidden="true"><use href="#i-izq"/></svg></button>
+      <h2 id="carrito-titulo">Tu carrito</h2>
+      <button class="cerrar" type="button" data-cerrar aria-label="Cerrar carrito"><svg class="icono" aria-hidden="true"><use href="#i-cerrar"/></svg></button>
+    </header>
+
+    <!-- Paso 1: productos -->
+    <div class="carrito__paso" id="paso-productos">
+      <div class="envio-gratis" id="envio-gratis">
+        <p id="envio-texto"></p>
+        <div class="envio-gratis__barra"><i id="envio-barra"></i></div>
+      </div>
+      <ul class="carrito__lista" id="carrito-lista" role="list"></ul>
+      <div class="carrito__vacio" id="carrito-vacio" hidden>
+        <svg class="icono" aria-hidden="true"><use href="#i-carrito"/></svg>
+        <p>Tu carrito está vacío.</p>
+        <a class="boton boton--acento" href="#tienda" data-cerrar>Ir a la tienda</a>
+      </div>
+      <footer class="carrito__pie" id="carrito-pie">
+        <p class="carrito__total"><span>Subtotal</span><strong id="subtotal">$0</strong></p>
+        <button class="boton boton--acento boton--ancho" type="button" id="ir-pedido">Continuar con el pedido <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></button>
+        <button class="carrito__vaciar" type="button" id="vaciar">Vaciar carrito</button>
+      </footer>
+    </div>
+
+    <!-- Paso 2: datos de entrega -->
+    <form class="carrito__paso pedido" id="paso-pedido" hidden novalidate>
+      <fieldset class="opciones">
+        <legend>Entrega</legend>
+        <label class="opcion"><input type="radio" name="entrega" value="domicilio" checked><span><strong>Domicilio en Funza</strong><small>El mismo día · y municipios cercanos</small></span></label>
+        <label class="opcion"><input type="radio" name="entrega" value="nacional"><span><strong>Envío nacional</strong><small>Transportadora · 2 a 4 días hábiles</small></span></label>
+        <label class="opcion opcion--ancha"><input type="radio" name="entrega" value="tienda"><span><strong>Recoger en el almacén</strong><small>Lunes a sábado, 8:00 a. m. – 6:00 p. m.</small></span></label>
+      </fieldset>
+      <div class="campo"><label for="p-nombre">Nombre</label><input id="p-nombre" name="nombre" autocomplete="name" required></div>
+      <div class="campo"><label for="p-telefono">Celular</label><input id="p-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required pattern="[0-9 +]{7,15}"></div>
+      <div class="campo" id="campo-direccion"><label for="p-direccion" id="etiqueta-direccion">Dirección y barrio</label><input id="p-direccion" name="direccion" autocomplete="street-address" required></div>
+      <div class="campo"><label for="p-carro">Tu carro <small>(marca, modelo y año)</small></label><input id="p-carro" name="carro" placeholder="Ej.: Renault Sandero 2016"></div>
+      <fieldset class="opciones opciones--pago">
+        <legend>Forma de pago</legend>
+        <label class="opcion"><input type="radio" name="pago" value="Contraentrega (efectivo)" data-pago="contraentrega" checked><span><strong>Contraentrega</strong><small>Efectivo · +$3.000</small></span></label>
+        <label class="opcion"><input type="radio" name="pago" value="Nequi"><span><strong>Nequi</strong></span></label>
+        <label class="opcion"><input type="radio" name="pago" value="Daviplata"><span><strong>Daviplata</strong></span></label>
+        <label class="opcion"><input type="radio" name="pago" value="Transferencia bancaria"><span><strong>Transferencia</strong></span></label>
+        <label class="opcion opcion--ancha"><input type="radio" name="pago" value="Tarjeta débito o crédito (datáfono en el almacén)" data-pago="datafono"><span><strong>Tarjeta débito o crédito</strong><small>Con datáfono, en el almacén</small></span></label>
+      </fieldset>
+      <footer class="carrito__pie">
+        <p class="carrito__total"><span>Total</span><strong id="total-pedido">$0</strong></p>
+        <p class="carrito__nota" id="nota-envio"></p>
+        <p class="error" id="error-pedido" role="alert"></p>
+        <button class="boton boton--whatsapp boton--ancho" type="submit"><svg class="icono" aria-hidden="true"><use href="#i-whatsapp"/></svg>Enviar pedido por WhatsApp</button>
+      </footer>
+    </form>
+  </div>
+</dialog>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script src="js/datos.js" defer></script>
+<script src="js/principal.js" defer></script>
+</body>
+</html>
